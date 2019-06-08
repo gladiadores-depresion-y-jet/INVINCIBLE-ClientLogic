@@ -86,6 +86,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/david/Documents/INVINCIBLE-ClientLogic/clientcomm/Requests.cpp">
+			<Option target="Invincible_ClientLogic"/>
+		</Unit>
+		<Unit filename="/home/david/Documents/INVINCIBLE-ClientLogic/clientcomm/Requests.h">
+			<Option target="Invincible_ClientLogic"/>
+		</Unit>
 		<Unit filename="/home/david/Documents/INVINCIBLE-ClientLogic/main.cpp">
 			<Option target="Invincible_ClientLogic"/>
 		</Unit>

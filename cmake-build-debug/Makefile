@@ -123,6 +123,33 @@ Invincible_ClientLogic/fast:
 	$(MAKE) -f CMakeFiles/Invincible_ClientLogic.dir/build.make CMakeFiles/Invincible_ClientLogic.dir/build
 .PHONY : Invincible_ClientLogic/fast
 
+clientcomm/Requests.o: clientcomm/Requests.cpp.o
+
+.PHONY : clientcomm/Requests.o
+
+# target to build an object file
+clientcomm/Requests.cpp.o:
+	$(MAKE) -f CMakeFiles/Invincible_ClientLogic.dir/build.make CMakeFiles/Invincible_ClientLogic.dir/clientcomm/Requests.cpp.o
+.PHONY : clientcomm/Requests.cpp.o
+
+clientcomm/Requests.i: clientcomm/Requests.cpp.i
+
+.PHONY : clientcomm/Requests.i
+
+# target to preprocess a source file
+clientcomm/Requests.cpp.i:
+	$(MAKE) -f CMakeFiles/Invincible_ClientLogic.dir/build.make CMakeFiles/Invincible_ClientLogic.dir/clientcomm/Requests.cpp.i
+.PHONY : clientcomm/Requests.cpp.i
+
+clientcomm/Requests.s: clientcomm/Requests.cpp.s
+
+.PHONY : clientcomm/Requests.s
+
+# target to generate assembly for a file
+clientcomm/Requests.cpp.s:
+	$(MAKE) -f CMakeFiles/Invincible_ClientLogic.dir/build.make CMakeFiles/Invincible_ClientLogic.dir/clientcomm/Requests.cpp.s
+.PHONY : clientcomm/Requests.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Invincible_ClientLogic"
 	@echo "... edit_cache"
+	@echo "... clientcomm/Requests.o"
+	@echo "... clientcomm/Requests.i"
+	@echo "... clientcomm/Requests.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

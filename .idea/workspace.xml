@@ -12,72 +12,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9bc7043a-5f45-45d4-a2be-e00319d71803" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientcomm/Requests.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clientcomm/Requests.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.14.2/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Invincible_ClientLogic" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Invincible_ClientLogic" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Invincible_ClientLogic.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Invincible_ClientLogic.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/async.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/client.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/common.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/config.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/cookie.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/date.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/description.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/endpoint.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/errors.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/flags.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/http.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/http_defs.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/http_header.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/http_headers.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/iterator_adapter.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/listener.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/mailbox.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/mime.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/net.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/optional.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/os.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/peer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/prototype.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/reactor.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/route_bind.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/router.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/serializer/rapidjson.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/stream.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/string_view.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/tcp.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/timer_pool.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/transport.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/type_checkers.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/typeid.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/version.h.in" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pistache/view.h" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -101,11 +54,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/clientcomm/Requests.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="e#40#61#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/clientcomm/Requests.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <folding>
+                <element signature="e#125#144#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,8 +95,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/clientcomm/requests.cpp" />
+        <option value="$PROJECT_DIR$/clientcomm/requests.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/clientcomm/Requests.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/clientcomm/Requests.cpp" />
       </list>
     </option>
   </component>
@@ -140,6 +121,16 @@
             <path>
               <item name="Invincible_ClientLogic" type="b2602c69:ProjectViewProjectNode" />
               <item name="INVINCIBLE-ClientLogic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Invincible_ClientLogic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="INVINCIBLE-ClientLogic" type="462c0819:PsiDirectoryNode" />
+              <item name="clientcomm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Invincible_ClientLogic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="INVINCIBLE-ClientLogic" type="462c0819:PsiDirectoryNode" />
+              <item name="nlohmann" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -189,22 +180,26 @@
       <workItem from="1559686791537" duration="3607000" />
       <workItem from="1559694840050" duration="826000" />
       <workItem from="1559712217858" duration="597000" />
+      <workItem from="1559922443013" duration="1221000" />
+      <workItem from="1559945181924" duration="8592000" />
+      <workItem from="1559955582038" duration="102000" />
+      <workItem from="1559955695147" duration="3717000" />
+      <workItem from="1559959917331" duration="2897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8919000" />
+    <option name="totallyTimeSpent" value="25448000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34820718" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3131474" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32868218" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34728682" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -254,6 +249,24 @@
     <entry file="file://$PROJECT_DIR$/curlpp/Easy.inl" />
     <entry file="file://$PROJECT_DIR$/curlpp/Easy.hpp" />
     <entry file="file://$PROJECT_DIR$/curlpp/cURLpp.hpp" />
+    <entry file="file://$PROJECT_DIR$/nlohmann/json.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-630" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nlohmann/json_fwd.hpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientcomm/Requests.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="e#125#144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -263,8 +276,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clientcomm/Requests.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#40#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

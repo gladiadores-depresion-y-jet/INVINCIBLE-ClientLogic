@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Invincible_ClientLogic.dir/main.cpp.o"
+  "CMakeFiles/Invincible_ClientLogic.dir/clientcomm/Requests.cpp.o"
   "Invincible_ClientLogic.pdb"
   "Invincible_ClientLogic"
 )

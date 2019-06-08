@@ -4,7 +4,7 @@ project(Invincible_ClientLogic)
 set(CMAKE_CXX_STANDARD 11)
 set(SOURCE CMAKE_SOURCE_DIR)
 
-add_executable(Invincible_ClientLogic main.cpp)
+add_executable(Invincible_ClientLogic main.cpp clientcomm/Requests.cpp clientcomm/Requests.h)
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(${PROJECT_NAME} curl)

@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/david/Documents/INVINCIBLE-ClientLogic/clientcomm/Requests.cpp" "/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/clientcomm/Requests.cpp.o"
   "/home/david/Documents/INVINCIBLE-ClientLogic/main.cpp" "/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/CMakeFiles/Invincible_ClientLogic.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
