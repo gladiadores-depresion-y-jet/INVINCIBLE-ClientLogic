@@ -4,6 +4,7 @@ int main() {
     Requests *requests = new Requests();
     std::string answer;
 
+
     bool finish = false;
     while (!finish) {
        std::cout << "Que desea hacer?" << "\n 1: hacer post\n 2: salir" << std::endl;
