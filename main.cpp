@@ -1,22 +1,36 @@
 #include <clientcomm/Requests.h>
+#include <synthaxParser/Parser.h>
 
 int main() {
-    Requests *requests = new Requests();
+    std::string ipAdress = "127.0.0.1", port = "9080";
+    Requests *requests = new Requests(ipAdress, port);
     std::string answer;
 
 
     bool finish = false;
     while (!finish) {
-       std::cout << "Que desea hacer?" << "\n 1: hacer post\n 2: salir" << std::endl;
+       std::cout << "Que desea hacer?" << "\n 1: hacer insert\n 2: hacer select" << std::endl;
        std::cin >> answer;
        if (answer == "1") {
-           std::cout << "Que desea enviar?" << std::endl;
+           std::cout << "Que desea enviar para el insert?" << std::endl;
            std::cin >> answer;
-           requests->insertMetadata(answer);
+           requests->sendPostRequest(answer, INSERT);
        }
-       else
+       else if (answer == "2") {
+           std::cout << "Que desea enviar para el select?" << std::endl;
+            std:: cin >> answer;
+            requests->sendPostRequest(answer, SELECT);
+       }
+       else {
            finish = true;
+       }
    }
-    return 0;
+
+    /*Parser *parser = new Parser();
+    parser->scriptTypeofRequestParser("Hola mi nombre es david");*/
+
+
+
+     return 0;
 }
 
