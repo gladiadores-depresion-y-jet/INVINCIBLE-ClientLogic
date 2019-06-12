@@ -8,94 +8,103 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug"/>
+				<Option working_dir="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug"/>
+				<Option working_dir="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Invincible_ClientLogic">
-				<Option output="/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Invincible_ClientLogic" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug"/>
+				<Option output="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Invincible_ClientLogic" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/david/Documents/INVINCIBLE-ClientLogic"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 Invincible_ClientLogic"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 Invincible_ClientLogic"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Invincible_ClientLogic/fast">
-				<Option output="/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Invincible_ClientLogic" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug"/>
+				<Option output="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Invincible_ClientLogic" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/david/Documents/INVINCIBLE-ClientLogic"/>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
 					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 Invincible_ClientLogic/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 Invincible_ClientLogic/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug"/>
+				<Option working_dir="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/david/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/david/Documents/INVINCIBLE-ClientLogic/clientcomm/Requests.cpp">
+		<Unit filename="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/client/Requests.cpp">
 			<Option target="Invincible_ClientLogic"/>
 		</Unit>
-		<Unit filename="/home/david/Documents/INVINCIBLE-ClientLogic/clientcomm/Requests.h">
+		<Unit filename="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/client/Requests.h">
 			<Option target="Invincible_ClientLogic"/>
 		</Unit>
-		<Unit filename="/home/david/Documents/INVINCIBLE-ClientLogic/main.cpp">
+		<Unit filename="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/client/ResourceOfRequest.h">
 			<Option target="Invincible_ClientLogic"/>
 		</Unit>
-		<Unit filename="/home/david/Documents/INVINCIBLE-ClientLogic/CMakeLists.txt">
+		<Unit filename="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/main.cpp">
+			<Option target="Invincible_ClientLogic"/>
+		</Unit>
+		<Unit filename="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/synthaxParser/Parser.cpp">
+			<Option target="Invincible_ClientLogic"/>
+		</Unit>
+		<Unit filename="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/synthaxParser/Parser.h">
+			<Option target="Invincible_ClientLogic"/>
+		</Unit>
+		<Unit filename="/home/kugelblitz/Documents/INVINCIBLE-ClientLogic/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

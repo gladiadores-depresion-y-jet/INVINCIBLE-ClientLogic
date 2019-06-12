@@ -37,7 +37,7 @@ public:
      * @param data, info que se enviara al servidor como cuerpo del request
      * @param resourceOfRequest, tipo de REST resource al cual se le quiere hacer el request
      */
-    void sendPostRequest(std::string &data, ResourceOfRequest resourceOfRequest);
+    std::string sendPostRequest(std::string &data, ResourceOfRequest resourceOfRequest);
 
 private:
     CURL *curl;
