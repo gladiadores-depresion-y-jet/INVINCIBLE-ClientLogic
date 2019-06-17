@@ -597,6 +597,8 @@ string
 -
 client/Requests.h
 -
+nlohmann/json.hpp
+-
 
 ../client/ResourceOfRequest.h
 
@@ -604,7 +606,5 @@ client/Requests.h
 client/Requests.h
 -
 synthaxParser/Parser.h
--
-nlohmann/json.hpp
 -
 

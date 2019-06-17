@@ -10,21 +10,21 @@
 #include <algorithm>
 #include <string>
 #include <client/Requests.h>
+#include <nlohmann/json.hpp>
+
+using nlohmann::json;
 
 class Parser {
 
 public:
-    bool scriptTypeofRequestParser(std::string &script);
+    json scriptTypeofRequestParser(std::string &script);
 
-    bool insertParser(std::vector<std::string> strings);
-    bool selectParser(std::vector<std::string> strings);
-    bool updateParser(std::vector<std::string> strings);
-    bool deleteParser(std::vector<std::string> strings);
+private:
+    json insertParser(std::vector<std::string> strings);
+    json selectParser(std::vector<std::string> strings);
+    json updateParser(std::vector<std::string> strings);
+    json deleteParser(std::vector<std::string> strings);
 
-    bool sendInsertPostRequest(std::string json);
-    bool sendSelectPostRequest(std::string json);
-    bool sendUpdatePostRequest(std::string json);
-    bool sendDeletePostRequest(std::string json);
 };
 
 

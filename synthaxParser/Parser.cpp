@@ -7,10 +7,10 @@
 
 using json = nlohmann::json;
 
-bool Parser::scriptTypeofRequestParser(std::string &script) {
-    bool hasType = true;
+json Parser::scriptTypeofRequestParser(std::string &script) {
+    json jsonRequest;
     try {
-        // Divide
+        // Divide string por espacios y pone substrings en vector
         std::vector<std::string> strings;
         std::istringstream f(script);
         std::string s;
@@ -22,39 +22,32 @@ bool Parser::scriptTypeofRequestParser(std::string &script) {
         std::transform(typeOfRequest.begin(), typeOfRequest.end(), typeOfRequest.begin(), ::tolower);
 
         if (typeOfRequest == "insert") {
-            this->insertParser(strings);
+            jsonRequest = this->insertParser(strings);
         }
 
         else if (typeOfRequest == "select") {
-            this->selectParser(strings);
+            jsonRequest = this->selectParser(strings);
         }
 
         else if (typeOfRequest == "update") {
-            this->updateParser(strings);
+            jsonRequest = this->updateParser(strings);
         }
 
         else if (typeOfRequest == "delete") {
-            this->deleteParser(strings);
-        }
-
-        else {
-            hasType = false;
+            jsonRequest = this->deleteParser(strings);
         }
     }
 
     catch (const std::exception& e) {
         e.what();
-        hasType = false;
     }
 
-
-
-    return hasType;
+    return jsonRequest;
 
 }
 
-bool Parser::insertParser(std::vector<std::string> strings) {
-    bool successful = false;
+json Parser::insertParser(std::vector<std::string> strings) {
+    json jsonRequest;
     std::string table;
     std::string cols;
     std::string values;
@@ -68,9 +61,9 @@ bool Parser::insertParser(std::vector<std::string> strings) {
                 if (strings[4] == "values") {
                     if (strings[5][0] == '(' && strings[5][strings[5].length()-1] == ')') {
                         values = strings[5].substr(1, strings[5].length()-2);
-                        successful = true;
-
-                        std::cout << "Table : " << table << "\n Columnas : " << cols << "\n Valores : " << values << std::endl;
+                        jsonRequest["table"] = table;
+                        jsonRequest["cols"] = cols;
+                        jsonRequest["values"] = values;
                     }
                 }
             }
@@ -78,84 +71,143 @@ bool Parser::insertParser(std::vector<std::string> strings) {
     }
 
 
-    return successful;
+    return jsonRequest;
 }
 
-/*bool Parser::insertParser(std::vector<std::string> strings) {
-    // TODO cambiar
 
-    bool succcessful = true;
-    int i = 1;
+json Parser::selectParser(std::vector<std::string> strings) {
+    json jsonRequest;
+    std::string table, cols, whereCol, whereValues;
+    if (strings.size() >= 8) {
+        if (strings[1][0] == '(' && strings[1][strings[1].length()-1] == ')') {
+            cols = strings[1].substr(1, strings[1].length()-2);
+            std::transform(strings[2].begin(), strings[2].end(), strings[2].begin(), ::tolower);
+            if(strings[2] == "from") {
+                table = strings[3];
+                std::transform(strings[4].begin(), strings[4].end(), strings[4].begin(), ::tolower);
+                if (strings[4] == "where") {
+                    whereCol = strings[5];
+                    std::transform(strings[6].begin(), strings[6].end(), strings[6].begin(), ::tolower);
+                    if (strings[6] == "in") {
+                        if (strings[7][0] == '(' && strings[7][strings[7].length()-1] == ')') {
+                            whereValues = strings[7].substr(1, strings[7].length()-2);
+                            jsonRequest["table"] = table;
+                            jsonRequest["cols"] = cols;
+
+                            std::ostringstream os;
+                            os << whereCol << "=" << whereValues;
+                            jsonRequest["WHERE"] = os.str();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    return jsonRequest;
+}
+
+json Parser::updateParser(std::vector<std::string> strings) {
+    json jsonRequest;
     std::string table;
     std::string cols;
     std::string values;
 
-    json jsonToSend;
-
-    // Vefica que exista la palabra INTO
-    std::string hasInto = strings[i];
-    std::transform(hasInto.begin(), hasInto.end(), hasInto.begin(), ::tolower);
-    if (hasInto == "into") {
-        i++;
-        // Obtiene el nombre la tabla
-        table = strings[i];
-        i++;
-
-        if (strings[i][0] == '(') {
-            // elimina de la primera columna el simbolo (
-            std::string substring = strings[i].substr(1, strings[i].length()-1);
-            cols.append(substring);
-            while (strings[i][strings[i].length()-1] != ')') {
-                // anade cols
-                cols.append(strings[i]);
-                i++;
+    if (strings.size() >= 6) {
+        table = strings[1];
+        std::transform(strings[2].begin(), strings[2].end(), strings[2].begin(), ::tolower);
+        if (strings[2] == "set") {
+            std::vector<std::string> subs;
+            std::istringstream f(strings[3]);
+            std::string s;
+            while (getline(f, s, ',')) {
+                subs.push_back(s);
             }
-            // anade la ultima col sin )
-            std::string temp = strings[i].substr(0, strings[i].length()-2);
-            cols.append(temp);
-            i++;
+            std::ostringstream osCols;
+            std::ostringstream osValues;
+            for (int i = 0; i < subs.size(); i++) {
+                std::vector<std::string> temp;
+                std::istringstream g(subs[i]);
+                std::string ss;
+                while (getline(g, ss, '=')) {
+                    temp.push_back(ss);
+                }
+                if (i == subs.size()-1) {
+                    osCols << temp[0];
+                    osValues << temp[1];
+                }
+                else {
+                    osCols << temp[0] << ",";
+                    osValues << temp[1] << ",";
+                }
+            }
+            cols = osCols.str();
+            values = osValues.str();
+            std::transform(strings[4].begin(), strings[4].end(), strings[4].begin(), ::tolower);
+            if (strings[4] == "where") {
+                jsonRequest["WHERE"] = strings[5];
+                jsonRequest["table"] = table;
 
-            std::string hasValues = strings[i];
-            std::transform(hasValues.begin(), hasValues.end(), hasValues.begin(), ::tolower);
-            if (hasValues == "values") {
-                i++;
+                std::vector<std::string> tempCols;
+                std::istringstream ff(cols);
+                std::string ssss;
+                while (getline(ff, ssss, ',')) {
+                    tempCols.push_back(ssss);
+                }
 
-                if (strings[i][0] == '(') {
-                    substring = strings[i].substr(1, strings[i].length());
+                std::vector<std::string> tempValues;
+                std::istringstream fff(values);
+                std::string sssss;
+                while (getline(fff, sssss, ',')) {
+                    tempValues.push_back(sssss);
+                }
 
-                    values.append(substring);
-                    while (strings[i][strings[i].length()-1] != ')') {
-                        // anade cols
-                        values.append(strings[i]);
-                        i++;
+                std::ostringstream colValues;
+                for (int i = 0; i < tempCols.size(); i++) {
+                    if (i != tempCols.size()-1) {
+                        colValues << tempCols[i] << "=" << tempValues[i] << ",";
+
                     }
-                    // anade la ultima col sin )
-                    temp = strings[i].substr(0, strings[i].length()-2);
-                    values.append(temp);
+                    else {
+                        colValues << tempCols[i] << "=" << tempValues[i];
+                    }
+                }
 
+                jsonRequest["cols"] = colValues.str();
+            }
+        }
+    }
+
+    return jsonRequest;
+}
+
+json Parser::deleteParser(std::vector<std::string> strings) {
+    json jsonRequest;
+    std::string table;
+
+    if (strings.size() >= 3) {
+        std::transform(strings[1].begin(), strings[1].end(), strings[1].begin(), ::tolower);
+        if (strings[1] == "from") {
+            jsonRequest["table"] = strings[2];
+            if (strings.size() > 3) {
+                std::transform(strings[3].begin(), strings[3].end(), strings[3].begin(), ::tolower);
+                if (strings[3] == "where") {
+                    std::vector<std::string> subs;
+                    std::istringstream f(strings[4]);
+                    std::string s;
+                    while (getline(f, s, '=')) {
+                        subs.push_back(s);
+                    }
+                    if (subs.size() == 2) {
+                        json temp;
+                        temp["col"] = subs[0];
+                        temp["value"] = subs[1];
+                        jsonRequest["where"] = temp;
+                    }
                 }
             }
         }
     }
 
-    else
-        succcessful = false;
-
-    jsonToSend["cols"] = cols;
-    jsonToSend["values"] = values;
-    jsonToSend["table"] = table;
-
-    return succcessful;
-}*/
-
-bool Parser::selectParser(std::vector<std::string> strings) {
-
-}
-
-bool Parser::updateParser(std::vector<std::string> strings) {
-
-}
-
-bool Parser::deleteParser(std::vector<std::string> strings) {
-
+    return jsonRequest;
 }
